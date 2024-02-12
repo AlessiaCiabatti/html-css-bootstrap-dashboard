@@ -58,6 +58,11 @@ main{
   top: 0;
 }
 
+.navbar .search{
+  flex-grow: 2;
+  width: 100%;
+}
+
 .boolean {
   background-color: var(--boolean);
   height: 125px;
