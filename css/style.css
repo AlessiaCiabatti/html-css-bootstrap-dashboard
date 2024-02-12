@@ -1,0 +1,58 @@
+:root{
+  --nav: #f8f9fa;
+  --search: #e5e5e5;
+  --bell: #ff8f00;
+  --boolean: #1b72e8;
+  --options: #165bba;
+  --sidebar_bg: #0d253a;
+  --sidebar_slide: #051e34;
+  --classe: #f26551;
+  --done: #198754;
+  --process: #ffc107;
+  --failed: #dc3545;
+  --link: #0d6efd;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+.ac_container{
+
+}
+
+header .navbar{
+  height: 70px;
+  background-color: var(--nav) !important;
+}
+
+.ac_navline{
+  background-color: white;
+}
+
+header .form-control{
+  background-color: var(--search);
+}
+
+
+/* main */
+.wrapper{
+  display: flex;
+}
+
+main{
+  height: calc(100vh - 140px);
+  overflow: auto;
+  height: 100%;
+}
+
+.sidebar{
+  background-color: var(--sidebar_bg);
+  width: 150px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
