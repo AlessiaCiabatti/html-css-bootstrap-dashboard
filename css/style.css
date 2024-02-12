@@ -20,23 +20,24 @@ body{
 body, html {
   height: 100%;
 }
-.ac_container{
-
-}
 
 header .navbar{
   height: 70px;
   background-color: var(--nav) !important;
 }
 
-.ac_navline{
+.navbar .container-fluid{
   background-color: white;
 }
 
-header .form-control{
-  background-color: var(--search);
+.container-fluid img:last-child{
+  height: 45px;
 }
 
+.form-control{
+  background-color: var(--search);
+  width: 70%;
+}
 
 /* main */
 .wrapper{
@@ -55,4 +56,50 @@ main{
   height: 100vh;
   position: sticky;
   top: 0;
+}
+
+.boolean {
+  background-color: var(--boolean);
+  height: 125px;
+  width: 100%;
+}
+
+li a{
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar ul {
+  list-style-type:none;
+}
+
+ol, ul {
+  padding-left: 25px;
+}
+
+.elements h1{
+  font-size: 2rem;
+}
+
+.btn.active{
+  height: 40px;
+  width: 40px;
+  color: white;
+  margin-right: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.plus{
+  font-size: 25px
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar{
+    width: 70px;
+  }
+
+  .sidebar span{
+    display: none;
+  }
 }
