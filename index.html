@@ -82,15 +82,15 @@
       <!-- /sidebar -->
 
       <!-- boolean -->
-      <section class="boolean text-white">
-        <div class="ac_container ">
+      <section class="boolean">
+        <div class="ac_container">
           <div class="container-fluid">
 
-              <div class="row">
+              <div class="row text-white">
 
-                <div class="col-sm-12">
+                <div class="col-sm-12 col-md-4 order-md-3 col-lg-3">
                   <div class="d-flex mt-4">
-                    <p class="me-3">Nuovo Studente</p>
+                    <p class="me-3 my_font_size">Nuovo Studente</p>
                     <a class="btn btn-outline" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                       +
                     </a>
@@ -109,78 +109,106 @@
                   </div>
                 </div>
                 
-                <div class="col-sm-12 d-flex align-items-center ">
-                  <div>
-                    <H1>Boolean</H1>
-                  </div>
-                  <div>
-                    <span class="ms-2 my_span piano">Piano blaze</span>
+                <div class="col-sm-12 col-md-4 col-lg-5">
+                  <div class="d-flex align-items-center mt-4">
+                    <div>
+                      <H1>Boolean</H1>
+                    </div>
+                    <div>
+                      <span class="ms-2 my_span my_font_size piano">Piano blaze</span>
+                    </div>
                   </div>
 
                   <div>
-                    <span>3 app</span>
+                    <span class="my_span my_font_size">3 app</span>
+                    <span class="raquo">&raquo;</span>
+                    <span class="my_span my_font_size d-lg-none">&#43;</span>
+                    <span class="my_span my_font_size d-sm-none d-md-none d-lg-inline">Boolean mobile app</span>
+                    <span class="my_span my_font_size d-sm-none d-md-none d-lg-inline">Boolean web app</span>
+                    <span class="my_span my_font_size d-sm-none d-md-none d-lg-inline">Boolean blog app</span>
                   </div>
                 </div>
 
-                <div class="col-sm-12">
-                  Column
+                <div class="col-sm-12 col-md-4">
+                  <div class="mt-4 students_width">
+                    <p class="students my_font_size">Studenti online negli ultimi 30 minuti</p>
+                    <p class="number my_font_size">125</p>
+                  </div>
                 </div>
 
               </div>
-          </div>
 
-          <!-- <div class="elements d-flex justify-content-between mx-3 mt-4">
-            <div class="my_width">
-
-              <div class="position-relative ">
-                <h1>
-                  Boolean
-                </h1>
-                <span class="my_span piano position-absolute">Piano blaze</span>
-              </div>
-
-              <div class="d-flex">
-                <span class="my_span me-2">3 app</span>
-                <span>&raquo;</span>
-                <span class="my_span d-sm-none d-md-none d-lg-block me-2">Boolean mobile app</span>
-                <span class="my_span d-sm-none d-md-none d-lg-block me-2">Boolean web app</span>
-                <span class="my_span d-sm-none d-md-none d-lg-block me-2">Boolean blog app</span>
-                <span class="my_span d-md-block d-lg-none ms-2">&#43;</span>
-              </div>
-              
-            </div>
-
-              <div class="students">
-                <p>Studenti online negli ultimi 30 minuti</p>
-                <h2>125</h2>
-              </div>
+              <div class="row">
+                <div class="col-sm-12 col-lg-8">
+                  <div class="title_border next-class">
+                    <h3 class="ms-4 mb-3 mt-2">Prossime classi</h3>
+                  </div>
+                  <div class="ac_border">
  
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col">Nome</th>
+                          <th scope="col">Data inizio</th>
+                          <th scope="col">Roi</th>
+                          <th scope="col">Stato</th>
+                          <th scope="col">Azioni</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">
+                            <div class="d-flex align-items-center">
+                              <div>
+                                <img src="img/class-avatar.jpg" alt="" style="width: 50px; height: 50px;">
+                              </div>
+                              <div class="ms-2 fw-normal">Class 75</div>
+                            </div>
+                          </th>
+                          <td class="align-middle">15 Feb 2021</td>
+                          <td class="align-middle">20%</td>
+                          <td class="align-middle"><span class="badge text-bg-success">Done</span></td>
+                          <td class="align-middle">
+                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
+                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>ciao</td>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>ciao</td>
+                          <td>ciao</td>
+                          <td>@twitter</td>
+                          <td>ciao</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div>
+                    F.A.Q.
+                  </div>
+                </div>
 
-            <div class="new my_margin d-flex">
-              <p>Nuovo Studente</p>
-              <button type="button" class="btn btn-outline-info ms-4"><span class="plus">&#43;</span></button>
-            </div>
-          </div> -->
+                <div class="col-sm-12 col-lg-4 debug">
+                  <div>
+                    Todo
+                  </div>
+                  <div>
+                    <div>img</div>
+                    <div>utenti atttivi</div>
+                  </div>
+                </div>
+              </div>
 
+          </div>
         </div>
-        
-        <section class="table">
-          <div class="ac_container">
-            <div class="row">
-  
-  
-              <div class="col-md-12 col-lg-7">
-                <p class="nero">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim commodi repellendus corporis veniam illo mollitia, id omnis maxime numquam dolor ab voluptatum molestias voluptate asperiores similique, quidem maiores veritatis. Optio assumenda natus provident facilis sed maiores quis velit nihil, dolore incidunt possimus vero quo porro, perferendis labore, similique magni ipsa id expedita rem veniam! Amet esse ad voluptates cum. Vitae aliquid deleniti sint quis sit fugit dolorum doloremque iusto voluptatum! Veritatis nobis harum atque aliquam earum facere expedita magnam est ducimus accusantium deserunt, ratione non perferendis cum dolor quidem fugit doloremque laudantium natus fugiat? Assumenda laboriosam voluptates aperiam nesciunt recusandae quos nobis, rerum voluptatibus velit sit adipisci dolore numquam nihil dicta explicabo similique temporibus, vitae laborum consequatur deleniti iste exercitationem ratione! Cumque est tempore aliquam eos quis aliquid laborum repudiandae in rerum quo cupiditate dolorum ratione voluptas saepe sed quia ullam molestias, enim mollitia blanditiis numquam tempora repellendus possimus quod! Culpa, assumenda? Odio sint error amet, delectus nobis consectetur, harum impedit qui neque reiciendis commodi deserunt dolor deleniti nostrum iste accusamus temporibus totam est expedita ex voluptatibus ea, sed similique. Explicabo sit provident ullam numquam harum iusto? Magni sint incidunt dicta, iure eum at? Corrupti ad maiores nisi deserunt reiciendis animi expedita ratione ea repudiandae consequatur veniam rem sint, minima distinctio quaerat natus pariatur reprehenderit tenetur soluta. Id distinctio ex in pariatur aliquam vero odit maiores sint! Harum explicabo consequuntur quaerat aut sit praesentium magni, maxime temporibus voluptates deserunt blanditiis dolore, perferendis, commodi dolorum architecto nobis et tenetur sapiente aliquid. Deleniti expedita facere unde doloribus in rerum modi voluptate aliquam quisquam corrupti, nulla aliquid et cumque molestiae! Ut, laudantium ratione, id harum praesentium numquam porro illo repellendus vel omnis autem rem tempora iste quis voluptatem veniam quaerat tenetur nesciunt esse. Libero sit adipisci numquam placeat cum, laborum nam nostrum non sapiente? Soluta debitis ipsam est magnam nisi quaerat temporibus cum, dolorum excepturi exercitationem incidunt ex commodi animi autem? Minima culpa alias laborum. Doloremque quod accusamus voluptatum pariatur sapiente blanditiis nostrum, quos, consequatur veniam porro sequi unde nihil. Delectus commodi doloremque dolores rerum asperiores eaque deserunt quod facilis fugiat ut laudantium aspernatur quos sed laborum accusamus quisquam dolorem excepturi assumenda ab unde tempore, earum non? Dignissimos ratione modi, quaerat vel maxime esse mollitia numquam totam tenetur qui assumenda eligendi velit autem perspiciatis vero laudantium unde, voluptates fugiat iusto voluptatibus necessitatibus. Dolorem dolor quis expedita id nobis aperiam ullam incidunt nam fugiat! Quam cum sequi culpa temporibus iusto in quos, nisi minus eveniet placeat distinctio ad. Quae minima neque repellat hic, enim reiciendis ut, esse explicabo suscipit doloribus quisquam excepturi a! Debitis eaque tenetur maiores suscipit fugit distinctio repellendus facilis deserunt doloribus impedit porro voluptatem at fugiat, excepturi repudiandae eveniet. Facilis ipsa eius quam, ratione laboriosam, expedita placeat quaerat voluptates temporibus debitis minima iure ex molestias suscipit, ullam eos eum adipisci repellendus est. Ex pariatur hic odit voluptas iure expedita reiciendis recusandae quibusdam illo ratione laboriosam fugiat consequatur tempore harum dolore non assumenda repudiandae saepe, corporis dolores dolor beatae itaque cumque! Et cumque modi voluptatibus explicabo, atque consequatur qui temporibus, accusantium tenetur sint assumenda pariatur laborum error, dolore ullam aut voluptatem repellat quas. Quo dolorum doloribus, commodi eaque doloremque quibusdam ducimus exercitationem, optio cum eius voluptas non sunt nisi! Alias consequatur doloribus necessitatibus eligendi nam suscipit optio eum aut, cumque error doloremque. Dolores impedit voluptas ipsam mollitia. Nesciunt quis fugiat illo rem quibusdam expedita, nihil eveniet dolor odio molestias. In, inventore porro quibusdam temporibus nisi velit natus laborum consequatur fugit harum, quos, unde beatae? Doloribus perferendis iste ipsum quasi modi ea velit maxime ipsam vitae dignissimos? Quisquam similique reprehenderit, reiciendis eaque possimus voluptas a ullam laboriosam corporis omnis explicabo tempora tempore. Natus ratione libero illum voluptas possimus provident debitis qui, vero maiores incidunt dolorum non, itaque labore dolorem neque est iste quia repellendus vitae voluptate laudantium et! Corrupti quisquam expedita, minus rem sit odit eligendi nam doloribus! Asperiores quae iusto reprehenderit ipsam expedita, tempora nostrum, delectus aperiam quam tenetur sit omnis inventore! Vitae minima suscipit accusamus eligendi distinctio nesciunt tempore voluptatem doloribus, debitis, nostrum quas unde! Quasi cumque tenetur natus labore voluptatum consequatur ratione, minus saepe odio architecto impedit dicta cupiditate consequuntur eveniet possimus doloremque? Soluta, quos ullam! Exercitationem, earum provident, amet, quam commodi minus eum mollitia libero soluta iure ab recusandae! Delectus, non fuga totam nostrum quas eum magni magnam et? Ea quia labore accusantium molestias doloremque aut pariatur officiis distinctio. Labore aspernatur, corrupti eligendi quam accusamus ratione tempora modi? Consectetur quasi vel magnam voluptates, iusto est quas? Sint velit, enim inventore perferendis autem corrupti at ullam deleniti non architecto facere quibusdam obcaecati beatae officiis iste officia possimus perspiciatis, doloremque corporis hic debitis nihil. Exercitationem a laudantium quod harum consequuntur ipsam, facere, nesciunt eum aspernatur sapiente doloribus eaque ab distinctio, magnam libero sunt beatae cum velit magni optio excepturi id deleniti? Dolorum deleniti odio delectus expedita sunt quod illum? Provident magni excepturi nam eaque assumenda veniam, qui voluptatum voluptates temporibus aspernatur quos, corporis natus iusto quidem, beatae itaque. Quo saepe asperiores expedita mollitia minima ut veniam facilis eligendi cupiditate! Sunt corporis voluptas ab et mollitia ad maiores nihil illo perspiciatis officiis autem dolorum nemo repellat aliquam voluptatem, quae fuga. Dolore fuga deserunt a? Similique, odio a optio aspernatur id dolorum excepturi aut nostrum voluptatem doloribus? Qui eaque ipsa iusto consequuntur. Odit temporibus voluptatum, ea laudantium vitae nostrum perferendis laborum ipsum minus corporis aut ex provident eum quibusdam, aspernatur quas. Consectetur magnam reiciendis officiis ducimus laborum. Aut ratione iure sint cupiditate, facilis doloremque debitis exercitationem? Quas tempore laborum officia beatae error rerum eaque deserunt quod fugiat eum, ut autem porro voluptas blanditiis dignissimos. Dignissimos optio molestiae dolores earum quod temporibus nobis nostrum, a nisi animi explicabo! Veritatis delectus architecto quia, expedita similique sit, illum quo, laboriosam explicabo sed libero. Ullam sed placeat labore cupiditate obcaecati numquam ex rem vel, ipsum, hic debitis amet est maxime dignissimos, provident veritatis delectus. Culpa aliquam eius quas nostrum aspernatur, ducimus modi sed ipsam! Accusantium enim eveniet tempore laborum eaque aperiam animi, rem sunt excepturi repellat. Consectetur.</p>
-              </div>
-              
-              <div class="col-md-12 col-lg-5">
-                lorem1000
-              </div>
-  
-            </div>
-
       </section>
-      
     </div>
 
   </main>

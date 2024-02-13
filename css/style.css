@@ -28,6 +28,11 @@ body, html {
   margin: 0 auto;
 }
 
+.debug{
+  background-color: red;
+  min-height: 50px;
+  border: 1px black solid;
+}
 
 /*  */
 header .navbar{
@@ -71,12 +76,11 @@ header .navbar{
 /* main */
 .wrapper{
   display: flex;
-  overflow: auto;
 }
 
 main{
   height: calc(100vh - 140px);
-  overflow: auto;
+  overflow-y: auto;
   height: 100%;
 }
 
@@ -85,8 +89,7 @@ main{
   background-color: var(--sidebar_bg);
   width: 70px;
   height: 100vh;
-  position: sticky;
-  top: 0;
+
 }
 
 li a{
@@ -104,13 +107,16 @@ ol, ul {
 /* /sidebar */
 
 /* boolean */
-.boolean {
-  background-color: var(--boolean);
-  height: 265px;
+.boolean{
   width: 100%;
 }
 
-.boolean .btn{
+.boolean .ac_container  {
+  background-color: var(--boolean);
+  height: 265px;
+}
+
+.boolean .btn-outline{
   color: white;
   border-color: white;
   width: 40px;
@@ -134,8 +140,52 @@ ol, ul {
   background-color: #0a3879;
 }
 
+.raquo{
+  font-size: 1.5rem;
+}
+
+p.students{
+  margin-bottom: 10px;
+}
+
+.my_font_size{
+  font-size: 15px;
+}
+
+.number{
+  font-size: 1.5rem;
+}
+
+.boolean .row:last-child{
+  margin-top: 5%;
+}
+
+.ac_border{
+  border: 1px solid lightgray;
+  padding: 1.5rem;
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+
+.title_border{
+  border: 1px solid lightgray;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+  background-color: var(--nav);
+}
+
+.next-class{
+ 
+}
 
 @media screen and (min-width: 768px) {
+  .boolean .ac_container {
+    height: 140px;
+  }
+
+  .students_width{
+    width: 90%;
+  }
 }
 
 @media screen and (min-width: 1200px){
