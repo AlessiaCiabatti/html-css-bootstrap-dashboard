@@ -17,6 +17,7 @@
 
 body{
   font-family: 'Lato', sans-serif;
+  background-color: var(--nav);
 }
 
 body, html {
@@ -161,7 +162,10 @@ p.students{
 }
 
 .ac_border{
-  border: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+  background-color: white;
   padding: 1.5rem;
   border-bottom-left-radius: 0.3rem;
   border-bottom-right-radius: 0.3rem;
@@ -201,6 +205,13 @@ p.students{
 
 .cell{
   width: 115px;
+}
+
+.border_list{
+  border-bottom: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+  background-color: white;
 }
 
 @media screen and (min-width: 768px) {
