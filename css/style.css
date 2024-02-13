@@ -74,6 +74,10 @@ header .navbar{
   width: 100%;
 }
 
+.dropdown-menu[data-bs-popper] {
+  left: -150px;
+}
+
 /* main */
 .wrapper{
   display: flex;
