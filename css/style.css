@@ -1,6 +1,7 @@
 :root{
   --nav: #f8f9fa;
   --search: #e5e5e5;
+  --icons: #5b5858;
   --bell: #ff8f00;
   --boolean: #1b72e8;
   --options: #165bba;
@@ -11,6 +12,7 @@
   --process: #ffc107;
   --failed: #dc3545;
   --link: #0d6efd;
+  --spanbg: #165bba;
 }
 
 body{
@@ -21,6 +23,13 @@ body, html {
   height: 100%;
 }
 
+.ac_container{
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+/*  */
 header .navbar{
   height: 70px;
   background-color: var(--nav) !important;
@@ -39,9 +48,30 @@ header .navbar{
   width: 70%;
 }
 
+.icons a{
+  text-decoration: none;
+}
+
+.icons i{
+  color: var(--icons);
+}
+
+.fa-bell:before {
+  color: var(--bell);
+}
+
+.navbar .search{
+  flex-grow: 2;
+}
+
+.navbar input{
+  width: 100%;
+}
+
 /* main */
 .wrapper{
   display: flex;
+  overflow: auto;
 }
 
 main{
@@ -50,23 +80,13 @@ main{
   height: 100%;
 }
 
+/* sidebar */
 .sidebar{
   background-color: var(--sidebar_bg);
-  width: 150px;
+  width: 70px;
   height: 100vh;
   position: sticky;
   top: 0;
-}
-
-.navbar .search{
-  flex-grow: 2;
-  width: 100%;
-}
-
-.boolean {
-  background-color: var(--boolean);
-  height: 125px;
-  width: 100%;
 }
 
 li a{
@@ -74,37 +94,52 @@ li a{
   text-decoration: none;
 }
 
+ol, ul {
+  padding-left: 1.5rem;
+}
+
 .sidebar ul {
   list-style-type:none;
 }
+/* /sidebar */
 
-ol, ul {
-  padding-left: 25px;
+/* boolean */
+.boolean {
+  background-color: var(--boolean);
+  height: 265px;
+  width: 100%;
 }
 
-.elements h1{
+.boolean .btn{
+  color: white;
+  border-color: white;
+  width: 40px;
+}
+
+.boolean h1{
   font-size: 2rem;
 }
 
-.btn.active{
-  height: 40px;
-  width: 40px;
-  color: white;
-  margin-right: 100px;
-  align-items: center;
-  justify-content: center;
+.boolean h1{
+  font-size: 1.7rem;
 }
 
-.plus{
-  font-size: 25px
+.my_span{
+  background-color: var(--spanbg);
+  padding: 3px 10px;
+  border-radius: 15px;
 }
 
-@media screen and (max-width: 768px) {
+.my_span:hover{
+  background-color: #0a3879;
+}
+
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px){
   .sidebar{
-    width: 70px;
-  }
-
-  .sidebar span{
-    display: none;
+    width: 150px;
   }
 }
