@@ -97,13 +97,70 @@
 
                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                       <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo studente</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                       </div>
                       <div class="offcanvas-body">
-                        <div>
-                          Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-                        </div>
+                        
+                        <form class="row g-3">
+                          <div class="col-md-6">
+                            <label for="FirstName" class="form-label">Nome</label>
+                            <input type="text" class="form-control" aria-label="First name">
+                          </div>
+                          <div class="col-md-6">
+                            <label for="LastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" aria-label="First name">
+                          </div>
+                          <div class="col-md-6">
+                            <label for="Email" class="form-label">Email</label>
+                            <div class="input-group mb-3">
+                              <span class="input-group-text" id="basic-addon1">@</span>
+                              <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="inputPassword5" class="form-label">Password</label>
+                            <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                          </div>
+                          <div class="col-md-12">
+                            <label for="Indirizzo" class="form-label">Indirizzo</label>
+                            <input type="text" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                          </div>
+                          <div class="col-md-6">
+                            <label for="inputZip" class="form-label">Città</label>
+                            <input type="text" class="form-control" id="inputZip">
+                          </div>
+                          <div class="col-md-4">
+                            <label for="inputState" class="form-label">Stato</label>
+                            <select id="inputState" class="form-select">
+                              <option selected>Scegli...</option>
+                              <option>...</option>
+                            </select>
+                          </div>
+                          <div class="col-md-2">
+                            <label for="inputZip" class="form-label">Cap</label>
+                            <input type="text" class="form-control" id="inputZip">
+                          </div>
+                          <div class="col-md-12">
+                            <label for="Email" class="form-label">Foto</label>
+                            <div class="input-group mb-3">
+                              <span class="input-group-text" id="basic-addon1">Scegli file</span>
+                              <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1" placeholder="Nessun file selezionato">
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="gridCheck">
+                              <label class="form-check-label" for="gridCheck">
+                                Seleziona per proseguire
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Salva</button>
+                            <button type="button" class="btn btn-warning">Svuota</button>
+                          </div>
+                        </form>
                       </div>
                     </div>
                   </div>
@@ -305,32 +362,32 @@
                       <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <button class="faq accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                               Come aggungere un nuovo studente?
                             </button>
                           </h2>
                           <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Clicca sul + in alto nella sezione blu.</div>
+                            <div class="accordion-body faq">Clicca sul + in alto nella sezione blu.</div>
                           </div>
                         </div>
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <button class="faq accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                               Come posso accedere alle informazioni del mio account?
                             </button>
                           </h2>
                           <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Clicca sull'icona della campanella.</div>
+                            <div class="accordion-body faq">Clicca sull'icona della campanella.</div>
                           </div>
                         </div>
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            <button class="faq accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                               Posso usare questa dashboard da mobile?
                             </button>
                           </h2>
                           <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                            <div class="accordion-body faq">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
                           </div>
                         </div>
                       </div>
@@ -344,7 +401,7 @@
                   <div class="title_border next-class">
                     <h3 class="ms-4 mb-3 mt-2">Todo</h3>
                   </div>
-                  <div class="border_list">
+                  <div class="todo border_list">
                     <ul class="list-group p-3">
                       <li class="list-group-item">
                         <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
